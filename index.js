@@ -7,10 +7,10 @@ const bot = new Telegraf(process.env.BOT_TOKEN);
 const channel = process.env.CHANNEL_ID;
 bot.start(async (ctx) => {
   ctx.reply(`Assalomu alaykum ${ctx.from.first_name}!\n
-Amiko Takliflar botiga xush kelibsiz!\n
-Takliflaringizni yuboring va biz takliflaringizni ko'rib chiqamiz va takliflaringizni kanalimizga joylaymiz!\n
-Siz va sizning takliflaringiz anonim bo'ladi!\n
-Kanalimiz: https://t.me/+EunXVj9KETc3MGRi`);
+Amiko Shikoyatlar botiga xush kelibsiz!\n
+Shikoyatlaringizni yuboring va biz shikoyatlaringizni ko'rib chiqamiz va shikoyatlaringizni kanalimizga joylaymiz!\n
+Siz va sizning shikoyatlaringiz anonim bo'ladi!\n
+Kanalimiz: https://t.me/+IQKFj-8VSXAzYWNi`);
   const user_id = ctx.from.id;
   const user = await User.findOne({ "botUser.id": user_id });
   if (!user) {
